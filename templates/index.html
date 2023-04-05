@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linear Regression Prediction</title>
+<style>
+ body {
+  background-color: lightblue;
+  color: whitesmoke;
+}
+h1 {
+  color: whitesmoke;
+}
+.content {
+  max-width: 800px;
+  margin: auto;}
+</style>
+</head>
+<body>
+    <center>
+    <div class="content">
+    <h1>Facebook  and Google Model(impression)</h1>
+    <p>{{ problem_statement }}</p>
+    <form action="/predict" method="POST">
+        <label for="campaign_type">Campaign Type:</label>
+        <select name="campaign_type" id="campaign_type">
+            <option value="0">PERFORMANCEMAX</option>
+            <option value="1">SEARCH</option>
+            <option value="2">VIDEO</option>
+            <option value="3">DISPLAY</option>
+        </select><br><br>
+
+        <label for="media_type">Media Type:</label>
+        <select name="media_type" id="media_type">
+            <option value="0">Social</option>
+            <option value="1">Unknown</option>
+            <option value="2">Search</option>
+            <option value="3">Display</option>
+        </select><br><br>
+
+        <label for="traffic_source">Traffic Source:</label>
+        <select name="traffic_source" id="traffic_source" style="width:8px">
+            <option value="0">Facebook</option>
+            <option value="1">Google</option>
+        </select><br><br>
+
+        <label for="cost">Cost (ZAR):</label>
+        <input type="text" name="cost" id="cost"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</div>
+</center>
+</body>
+</html>
+

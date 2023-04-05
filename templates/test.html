@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Impressions Prediction</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: white;
+			width: 50%;
+			margin: auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+		}
+		label {
+			display: inline-block;
+			width: 150px;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+		input[type=text], select {
+			width: 250px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+            text-align: center;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+        p {
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Impressions Prediction</h1>
+    <p>{{ problem_statement }}</p>
+	<form action="/predict" method="POST">
+		<label for="campaign_type">Campaign Type:</label>
+		<select name="campaign_type" id="campaign_type">
+			<option value="0">PERFORMANCEMAX</option>
+			<option value="1">SEARCH</option>
+			<option value="2">VIDEO</option>
+			<option value="3">DISPLAY</option>
+		</select><br><br>
+
+		<label for="media_type">Media Type:</label>
+		<select name="media_type" id="media_type">
+			<option value="0">Social</option>
+			<option value="1">Unknown</option>
+			<option value="2">Search</option>
+			<option value="3">Display</option>
+		</select><br><br>
+
+		<label for="traffic_source">Traffic Source:</label>
+		<select name="traffic_source" id="traffic_source">
+			<option value="0">Facebook</option>
+			<option value="1">Google</option>
+		</select><br><br>
+
+		<label for="cost">Cost (ZAR):</label>
+		<input type="text" name="cost" id="cost"><br><br>
+
+		
+            <input type="submit" value="Predict">
+        
+	</form>
+</body>
+</html>
