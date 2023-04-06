@@ -10,33 +10,45 @@ To get started with this project, you will need to clone the repository to your 
 ### Prerequisites
 This project requires the following libraries:
 
-pandas
-scikit-learn
-flask
+.pandas
+
+.scikit-learn
+
+.flask
+
 You can install these libraries using pip:
+
 `pip install numpy pandas scikit-learn flask
 `
 ### Installing
 To install this project, simply clone the repository to your local machine and install the required libraries using pip.
 
 `git clone https://github.com/your-username/BrandHubb-Model.git
+
 cd BrandHubb-Model
+
 pip install -r requirements.txt
 `
+
 ### Usage
 To use this project, you can simply run the app.py file and navigate to the URL displayed in the console.
+
 `python app.py
 or 
 flask run
 `
+
 This will start a Flask web application that allows users to input the campaign type, media type, traffic source, and cost of their advertising campaign, and receive a predicted number of impressions.
 
 ### Built With
+
 **Python** - The programming language used
 **scikit-learn** - Machine learning library for Python
 **Flask**- Web application framework for Python
+
 ### Authors
 Lereko Qholosha  -https:github.com/lerekoqholosha
+
 See also the list of [!contributors] who participated in this project.
 
 ### License
